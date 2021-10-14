@@ -35,7 +35,7 @@
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: rgb(37, 37, 37);
-    height: var(--nav-height);
+    height:60px;
     padding:0;
     position:fixed;
     width: 100%;

@@ -1,56 +1,37 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
 
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: rgb(37, 37, 37);
-  padding:0;
-  width: 100%;
+.lettersbuy{
+  text-align:center;
 }
-
-.nav-list {
-  list-style: none;
-  display: flex;
-}
-
-.nav-list li {
-  letter-spacing: 3px;
-  margin-left: 32px;
-}
-.nav-list {
-  z-index:10;
-  position: fixed;
-  top:0;
-  right: 0;
+.buy1{
+  transition:0.6s;
+  right:200px;
+  top:1200px;
+  position:relative;
+  z-index:3;
+  color:black;
   font-size:30px;
-  width: 100%;
-  height: 100%;
-  background:rgb(37, 37, 37);
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  transform: translateX(100%);
-  overflow: hidden;
-  transition: transform 0.3s ease-in;
+  cursor:pointer;
+}
+.buy2{
+  transition:0.6s;
+  left:300px;
+  top:1200px;
+  position:relative;
+  z-index:3;
+  color:black;
+  font-size:30px;
+  cursor:pointer;
+}
+section .allseeing .active{
+  display:none;
 }
 article .row{
   display:flex;
   width:100%;
 }
-.nav-list li {
-  margin-left: 0;
-  opacity: 0;
-}
-.nav-list a{
-  color:rgb(221, 221, 221);
-}
-.nav-list a:focus{
-  color:black;
-}
+
 .logoo{
   width:44px;
   padding-left:-3px;
@@ -62,6 +43,7 @@ article .row{
   height:0;
 }
 .mobile-menu {
+  opacity:1;
   display: block;
 }
 .line2{
@@ -86,6 +68,8 @@ article .row{
 .nav-list.active {
 transform: translateX(0);
 transition: transform 0.2s ease-in;
+opacity:1;
+overflow:hidden;
 }
 
 @keyframes navLinkFade {
@@ -107,6 +91,7 @@ to {
   background: rgb(221, 221, 221);
   margin: 7px;
   transition: 0.2s;
+  overflow:hidden;
 }
 .line1{
   position:relative;
@@ -114,8 +99,11 @@ to {
 .line3{
   position:relative;
 }
-header{height:44px; opacity:96%;}
 
+/* the most part having seen */   
+section.allseeing{
+  max-height:1700px;
+}
 /*EVERYTHING ABOUT NAV BAR */
 .nav-list {
   z-index:10;
@@ -132,16 +120,18 @@ header{height:44px; opacity:96%;}
   transform: translateX(100%);
   overflow: hidden;
   transition: transform 0.3s ease-in;
+  opacity:1;
 }
 .nav-list li {
   margin-left: 0;
   opacity: 0;
 }
 .nav-list a{
+  font-family: 'Poppins', sans-serif;
   color:rgb(221, 221, 221);
 }
 .nav-list a:focus{
-  color:black;
+  opacity:0.9;
 }
 .mobile-menu {
   display: block;
@@ -156,6 +146,7 @@ header{height:44px; opacity:96%;}
 .nav-list.active {
 transform: translateX(0);
 transition: transform 0.2s ease-in;
+opacity:1;
 }
 @keyframes navLinkFade {
   from {
@@ -169,7 +160,7 @@ transition: transform 0.2s ease-in;
 }
 
 .mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 6.4px);
+  transform: rotate(-45deg) translate(-8px, 6.9px);
 }
 
 .mobile-menu.active .line2 {
@@ -177,7 +168,7 @@ transition: transform 0.2s ease-in;
 }
 
 .mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -7px);
 }
 /*FROM STYLE.CSS FIRST 1O */
 .nav-list a{
@@ -185,7 +176,10 @@ transition: transform 0.2s ease-in;
   font-size:30px;
 }
 
-
+header{
+  height:44px; 
+  opacity:1;
+}
 header ul li {
   position: relative;
 }
@@ -197,53 +191,27 @@ header ul li a {
 header ul li a svg {
   font-size: 23px;
 }
-header ul li a:hover {
-  color: initial;
-}
-.crop img{
-    background-size:400px;
-    padding:0;
-    margin:0 auto;
-    width:100%;
-}
-nav.nav-produtos {
-  background: #343A40;
-  color: #FFF;
-  top:80px;
-  z-index:4;
+
+div.crop img{
+  background-size:400px;
   position:relative;
-  height:60px;
-}
-nav.nav-produtos a {
-  color: #FFF;
-}
-nav.nav-produtos ul.nav li {
-  position: relative;
-  padding: 10px;
-}
-nav.nav-produtos ul.nav li svg {
-  font-size: 20px;
-  margin-right: 10px;
-}
-nav.nav-produtos ul.nav li:hover {
-  background: black;
-}
-nav.nav-produtos ul.nav li:hover ul.nav {
-  display: block;
-}
-nav.nav-produtos ul.nav li ul.nav {
-  z-index: 9;
-  display: none;
-  position: absolute;
-  top: 44px;
-  left: 0px;
-  background: #343A40;
-  border-top: solid #FFC107 10px;
+  z-index:2;
+  background:rgb(54, 54, 54);
+  padding:0;
   width: 100%;
+  margin:0 auto;
 }
-nav.nav-produtos ul.nav li ul.nav li {
-  padding: 10px 25px;
+div.cropp img{
+  background-size:400px;
+  position:relative;
+  z-index:2;
+  background:rgb(54, 54, 54);
+  padding:0;
+  width: 100%;
+  margin:0 auto;
 }
+
+
 
 
 
@@ -295,13 +263,9 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
-}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -310,25 +274,6 @@ body {
   background-color: #fff;
 }
 
-[tabindex="-1"]:focus:not(:focus-visible) {
-  outline: 0 !important;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
 
 abbr[data-original-title], abbr[title] {
   text-decoration: underline;
@@ -392,14 +337,16 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #fff;
   text-decoration: none;
-  background-color: transparent;
+  transition: 0.3s;
 }
 
 a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  opacity: 0.7;
+}
+a:focus{
+  color:black;
 }
 
 
@@ -409,7 +356,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: rgb(37, 37, 37);
     padding:0;
   }
@@ -425,7 +372,7 @@ a:hover {
     margin-left: 32px;
   }
 }
-.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+.container-fluid{
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -509,6 +456,8 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
   color:rgb(10, 10, 10);
   text-align:Center;
   padding-top:100px;
-  padding-bottom:50px;
+  padding-bottom:70px;
+  margin:0;
+  height:100%;
 }
 /*# sourceMappingURL=style.css.map */
