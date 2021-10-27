@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <title>Loja lui</title>
 
   <!-- Favicons -->
@@ -17,7 +20,7 @@
 <body>
 
   <!-- header -->
-  <header> <div class="container-fluid" style='opacity:1;background:rgb(31, 65, 138)'>
+  <header> <div class="" style='position:fixed;width:100%; z-index:16; opacity:1;background:rgb(31, 65, 138)'>
     <!-- container -->
       <!-- row -->
     <section class="allup">
@@ -57,10 +60,37 @@
       </div> 
     </div>
       <div class="lettersbuy">
-          <a class="buy1">Comprar</a> 
-          <a class="buy2">Informações</a>
+          <a href="comprar.html" class="buy1">Comprar</a> 
+          <a href="comprar.html" class="buy2">Informações</a>
       </div>
-    
+
+      <!--
+        escolha a linha que mais goste
+        //sapato
+      -->
+      <section class="doescola">
+      <div class="container">
+        <div class="content">
+          <div class="social-media">
+            <i data-feather="instagram"></i>
+            <i data-feather="facebook"></i>
+          </div>
+          <div class="contenti-text">
+            <h3 class="escolhalinha">Escolha a linha que mais goste.</h3>
+          </div>
+          <img class="imgshoes" src="./imgs/shoes.png">
+        </div>
+        <div class="pre-order">
+          <i data-feather="shopping-bag"></i>
+          <a href="./comprar.html"><p>Comprar</p></a>
+        </div>
+      </div>
+      </section>
+      
+      <script src="https://unpkg.com/feather-icons"></script>
+      <script>
+        feather.replace()
+      </script>
       
   <!--
            <h2>Compras com segurança e com envios para todo brasil</h2>

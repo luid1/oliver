@@ -19,7 +19,9 @@
   a:hover {
     opacity: 0.7;
   }
-  
+  a:focus{
+    color:rgb(153, 153, 153);
+  }
   .logo {
     padding-top:10px;
     font-size: 40px;
@@ -105,7 +107,8 @@
       color:rgb(221, 221, 221);
     }
     .nav-list a:focus{
-      color:black;
+      color:rgb(153, 153, 153);
+    
     }
     .mobile-menu {
       display: block;
