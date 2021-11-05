@@ -5,14 +5,13 @@
 }
 .lettersbuy{
   text-align:center;
-  margin-top:-30px;
-  padding-bottom:20px;
+  margin-top:-2px;
 }
 .buy1{
   transition:0.6s;
   position:relative;
   z-index:3;
-  color:black;
+  color:rgb(83, 83, 83);
   font-size:20px;
   cursor:pointer;
   padding-right:10px;
@@ -22,7 +21,7 @@
   transition:0.6s;
   position:relative;
   z-index:3;
-  color:black;
+  color:rgb(83, 83, 83);
   font-size:20px;
   cursor:pointer;
 }
@@ -97,8 +96,8 @@ to {
 .mobile-menu{
   float:right;
   clear:both;
-  background:rgb(63, 61, 61);
   height:37px;
+  padding-right:10px;
 }
 .mobile-menu div {
   text-align:right;
@@ -193,30 +192,21 @@ opacity:1;
 header{
   height:44px; 
   opacity:1;
+  width:100%;
 }
-header ul li {
-  position: relative;
-}
-header ul li a {
-  font-size: 16px;
-  font-weight: bold;
-  color: #343A40;
-}
-header ul li a svg {
-  font-size: 23px;
-}
+
+
 .fotcingheight1{
   height:600px;
 }
 .crop{
-  height:calc(120vh);
-  margin-top:40px;
-  background:no-repeat center/cover url("../imgs/watch1.jpeg");
-  background-size:600px;
+  height:700px;
+  background:no-repeat center/cover url("../imgs/joia1.jpeg");
+  background-size:700px;
+
 }
 div.cropp img{
-  background-size:690px;
-  position:relative;
+  position:absolute;
   z-index:2;
   background:rgb(54, 54, 54);
   padding:0;
