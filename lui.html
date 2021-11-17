@@ -18,7 +18,16 @@
   <link rel="stylesheet" href="./style/stylelui.css" class="css">
 </head>
 <body>
-
+<!--inicio do preloader-->
+<div id="preloader">
+  <div class="inner">
+    <div class="load">
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+  </div>
+</div>
   <!-- header -->
   <header style="position:fixed" > <!--<div class="" style='position:fixed;width:100%; z-index:16; opacity:1;background:rgb(31, 65, 138)'>-->
     <!-- container -->
@@ -60,17 +69,17 @@
     -->
 
       <div class="crop">
+        <div class="movetres">
+           <a href="./comprar.html"><div class="tres">COMPRA</div></a>
+        </div>
+       
       </div> 
     </div>
-      <div class="lettersbuy">
-          <a href="comprar.html" class="buy1">Comprar</a> 
-          <a href="comprar.html" class="buy2">Informações</a>
-      </div>
 
       <!--
         escolha a linha que mais goste
         //sapato
-      -->
+     
       <section class="doescola">
       <div class="container">
         <div class="content">
@@ -89,7 +98,7 @@
         </div>
       </div>
       </section>
-      
+       -->
       <script src="https://unpkg.com/feather-icons"></script>
       <script>
         feather.replace()
@@ -113,7 +122,16 @@
   </section>
     <!-- Arquivos Bootstrap -->
     <script src="./js.js/mobile-navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="path-para-seu-script"></script>
+  <script>
+      $(window).on('load', function (){
+        $('#preloader .inner').fadeOut();
+        $('#preloader').delay(360).fadeOut('slow');
+        $('body').delay(360).css({'overflow':'visible'});
+      })
+
+  </script>
   </body>
-  
   </html>
   

@@ -3,6 +3,58 @@
 *{
   box-sizing:border-box;
 }
+/*preeloade*/
+.inner{
+  position:absolute;
+  background:rgb(31, 85, 136);
+  z-index:999;
+  width:100%;
+  height:100%;
+  float:left;
+  max-width: 100%;
+  overflow-x: hidden;
+  max-height:100%;
+  overflow-y: hidden;
+}
+.load{
+  position:relative;
+  display:flex;
+  flex-direction:row;
+  float:center;
+  z-index:999;
+  top:40%;
+  left:26%;
+}
+.load div{
+  width:60px;
+  height:60px;
+  background:rgb(56, 17, 194);
+  margin:16px;
+  border-radius:50%;
+  animation:anima 1s ease-in-out infinite alternate;
+}
+.load div:nth-child(1)
+{
+  animation-delay:-0.1s;
+  
+}
+.load div:nth-child(2)
+{
+  animation-delay:-0.4s;
+  
+}
+.load div:nth-child(3)
+{
+  animation-delay:-0.6s;
+  
+}
+@keyframes anima{
+  from{
+      transform:translateY(-100%);
+  }to{
+      transform:translateY(100%);
+  }
+}
 .lettersbuy{
   text-align:center;
   margin-top:-2px;
@@ -42,7 +94,7 @@ section.allup{
   width:44px;
   padding-left:-3px;
   cursor:pointer;
-  z-index: 12;
+  z-index: 10;
   position:fixed;
 }
 .div1{
@@ -201,18 +253,37 @@ header{
 }
 .crop{
   height:700px;
-  background:no-repeat center/cover url("../imgs/joia1.jpeg");
-  background-size:700px;
+  background:no-repeat center/cover url("../imgs/guccitouse.avif");
+  background-size:1700px;
 
 }
 div.cropp img{
   position:absolute;
   z-index:2;
-  background:rgb(54, 54, 54);
+  background:rgb(8, 8, 8);
   padding:0;
   margin:0 auto;
 }
+.movetres{
+  padding-top:500px;
+}
+div.tres {
+  cursor:pointer;
+  text-align: center;
+  color:rgb(7, 7, 7);
+  font-size:30px;
+  margin:0 auto;
+  width:180px;
+  height:60px;
+  border: 4px solid; /* As 4 bordas sólidas com 25px de espessura */
+  border-color: rgb(7, 7, 7);  /* cores: topo, direita, inferior, esquerda */
+  transition:0.4s;
+  }
 
+  div.tres:hover{
+    color:rgb(114, 111, 111);
+    border-color: rgb(104, 104, 104)  
+  }
 .firstsay{
   text-align:Center;
   margin-top:120px;
